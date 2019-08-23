@@ -4,8 +4,8 @@ from loadbalancer import LoadBalancer
 
 if __name__ == '__main__':
 
-    input_file = 'input.txt'
-    output_file = 'output.txt'
+    input_file = os.path.abspath('input.txt')
+    output_file = os.path.abspath('output.txt')
 
     if len(sys.argv) > 1:
         if os.path.isfile(sys.argv[1]):
